@@ -18,7 +18,6 @@ import {
   CpuChipIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
-
 export const chatbots = [
   {
     name: "ระเบียบและการเบิกสวัสดิการ",
@@ -26,8 +25,9 @@ export const chatbots = [
     href: "/chatbots/welfare-regulation",
     icon: ClipboardDocumentCheckIcon,
     color: "bg-teal-100",
-    enabled: true, // Disabled example
+    enabled: true,
     category: "สวัสดิการ",
+    keywords: ["ระเบียบ", "เบิก", "สิทธิ์", "ขั้นตอน", "สวัสดิการ"],
   },
   {
     name: "สวัสดิการเงินกู้",
@@ -35,8 +35,9 @@ export const chatbots = [
     href: "/chatbots/loan-benefits",
     icon: BanknotesIcon,
     color: "bg-amber-100",
-    enabled: true, // Disabled example
+    enabled: true,
     category: "สวัสดิการ",
+    keywords: ["สวัสดิการ", "เงินกู้", "เงื่อนไข", "ขอรับ", "กู้ยืม"],
   },
   {
     name: "งานจัดซื้อ",
@@ -44,8 +45,9 @@ export const chatbots = [
     href: "/chatbots/procurement",
     icon: ShoppingCartIcon,
     color: "bg-blue-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "การจัดซื้อจัดจ้าง",
+    keywords: ["จัดซื้อ", "กระบวนการ", "ข้อมูล", "ระเบียบ", "การเงิน"],
   },
   {
     name: "งานจัดจ้าง",
@@ -53,8 +55,9 @@ export const chatbots = [
     href: "/chatbots/contracting",
     icon: DocumentTextIcon,
     color: "bg-green-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "การจัดซื้อจัดจ้าง",
+    keywords: ["จัดจ้าง", "พนักงาน", "ผู้ให้บริการ", "ภายนอก", "จ้างงาน"],
   },
   {
     name: "งานจัดเช่า",
@@ -62,8 +65,9 @@ export const chatbots = [
     href: "/chatbots/rental",
     icon: BuildingOfficeIcon,
     color: "bg-yellow-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "การจัดซื้อจัดจ้าง",
+    keywords: ["จัดเช่า", "สิ่งของ", "พื้นที่", "ขั้นตอน", "เช่า"],
   },
   {
     name: "ดูดวงตามราศี",
@@ -71,8 +75,9 @@ export const chatbots = [
     href: "/chatbots/zodiac-horoscope",
     icon: PhoneIcon,
     color: "bg-violet-50",
-    enabled: true, // Disabled example
+    enabled: true,
     category: "อื่นๆ",
+    keywords: ["ดูดวง", "ราศี", "ดวงชะตา", "ความรัก", "สุขภาพ", "การงาน"],
   },
   {
     name: "ค้นหาข้อมูลมติที่ประชุม",
@@ -80,8 +85,9 @@ export const chatbots = [
     href: "/chatbots/meeting-search",
     icon: MagnifyingGlassIcon,
     color: "bg-orange-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "อื่นๆ",
+    keywords: ["ค้นหา", "ข้อมูล", "มติ", "ประชุม", "สรุป"],
   },
   {
     name: "งานมาตรฐานการก่อสร้างและขยายเขต",
@@ -89,8 +95,9 @@ export const chatbots = [
     href: "/chatbots/construction-standard",
     icon: WrenchScrewdriverIcon,
     color: "bg-red-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "อื่นๆ",
+    keywords: ["มาตรฐาน", "ก่อสร้าง", "เทคนิค", "ขยายเขต", "งานวิศวกรรม"],
   },
   {
     name: "AI วิเคราะห์พฤติกรรมลูกค้า",
@@ -98,8 +105,9 @@ export const chatbots = [
     href: "/chatbots/customer-behavior-ai",
     icon: ChartBarIcon,
     color: "bg-indigo-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "อื่นๆ",
+    keywords: ["AI", "วิเคราะห์", "ลูกค้า", "พฤติกรรม", "แนวโน้ม", "การตลาด"],
   },
   {
     name: "เลื่อนระดับ,ปรับต่ำแหน่ง,ปรับวุฒิ",
@@ -107,8 +115,15 @@ export const chatbots = [
     href: "/chatbots/staff-promotion",
     icon: UserGroupIcon,
     color: "bg-purple-100",
-    enabled: true, // Disabled example
+    enabled: true,
     category: "พนักงาน",
+    keywords: [
+      "เลื่อนระดับ",
+      "ปรับตำแหน่ง",
+      "ปรับวุฒิ",
+      "พนักงาน",
+      "ความก้าวหน้า",
+    ],
   },
   {
     name: "AI วิเคราะห์สมรรถนะพนักงาน",
@@ -116,18 +131,19 @@ export const chatbots = [
     href: "/chatbots/staff-analytics-ai",
     icon: AcademicCapIcon,
     color: "bg-pink-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "พนักงาน",
+    keywords: ["AI", "วิเคราะห์", "สมรรถนะ", "พนักงาน", "ลาออก", "ทักษะ"],
   },
-
   {
     name: "งานโครงการเกษียณอายุ",
     description: "ข้อมูลโครงการเกษียณและสิทธิ์ที่เกี่ยวข้อง",
     href: "/chatbots/retirement-project",
     icon: CalendarIcon,
     color: "bg-lime-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "พนักงาน",
+    keywords: ["เกษียณ", "โครงการ", "สิทธิ์", "เกษียณอายุ", "พนักงาน"],
   },
   {
     name: "งานของที่ระลึก",
@@ -135,8 +151,9 @@ export const chatbots = [
     href: "/chatbots/gifts",
     icon: GiftIcon,
     color: "bg-fuchsia-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "พนักงาน",
+    keywords: ["ของที่ระลึก", "ของขวัญ", "ของชำร่วย", "โอกาสพิเศษ"],
   },
   {
     name: "งานเครื่องราช ฯ",
@@ -144,8 +161,9 @@ export const chatbots = [
     href: "/chatbots/royal-decoration",
     icon: IdentificationIcon,
     color: "bg-rose-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "พนักงาน",
+    keywords: ["เครื่องราช", "พระราชทาน", "อิสริยาภรณ์", "เกียรติยศ"],
   },
   {
     name: "Cremation ระบบฌาปนกิจสงเคราะห์",
@@ -153,8 +171,9 @@ export const chatbots = [
     href: "/chatbots/cremation",
     icon: HeartIcon,
     color: "bg-sky-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "พนักงาน",
+    keywords: ["ฌาปนกิจ", "สิทธิ์", "ระบบ", "สงเคราะห์", "งานศพ"],
   },
   {
     name: "ถามตอบงานรับบริการรักษาพยาบาล",
@@ -162,8 +181,9 @@ export const chatbots = [
     href: "/chatbots/health-service",
     icon: ChatBubbleLeftRightIcon,
     color: "bg-cyan-100",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "สวัสดิการ",
+    keywords: ["รักษาพยาบาล", "สิทธิ์", "บริการ", "สุขภาพ", "ถามตอบ"],
   },
   {
     name: "ระบบเฝ้าระวังภัยคุกคามไซเบอร์",
@@ -171,8 +191,15 @@ export const chatbots = [
     href: "/chatbots/cyber-threats",
     icon: ShieldExclamationIcon,
     color: "bg-red-50",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "อื่นๆ",
+    keywords: [
+      "ภัยคุกคาม",
+      "ไซเบอร์",
+      "ความปลอดภัย",
+      "แจ้งเตือน",
+      "ระบบเฝ้าระวัง",
+    ],
   },
   {
     name: "IT Automation",
@@ -180,8 +207,9 @@ export const chatbots = [
     href: "/chatbots/it-automation",
     icon: CpuChipIcon,
     color: "bg-blue-50",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "อื่นๆ",
+    keywords: ["IT", "Automation", "อัตโนมัติ", "เทคโนโลยี", "ไอที"],
   },
   {
     name: "ระบบ Call Center อัจฉริยะ",
@@ -189,7 +217,14 @@ export const chatbots = [
     href: "/chatbots/ai-callcenter",
     icon: PhoneIcon,
     color: "bg-violet-50",
-    enabled: false, // Disabled example
+    enabled: false,
     category: "อื่นๆ",
+    keywords: [
+      "Call Center",
+      "AI",
+      "บริการลูกค้า",
+      "ระบบอัจฉริยะ",
+      "ศูนย์บริการ",
+    ],
   },
 ];
