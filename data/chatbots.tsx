@@ -20,6 +20,16 @@ import {
 } from "@heroicons/react/24/outline";
 export const chatbots = [
   {
+    name: "นโยบาย กฟภ.",
+    description: "นโยบายต่างๆ",
+    href: "/chatbots/pea-policy",
+    icon: ClipboardDocumentCheckIcon,
+    color: "bg-teal-100",
+    enabled: false,
+    category: "นโยบาย กฟภ.",
+    keywords: ["นโยบาย"],
+  },
+  {
     name: "ฌาปนกิจ และค่าช่วยเหลืองานศพ",
     description: "งานศพ",
     href: "/chatbots/wellfare-cremation",
