@@ -25,7 +25,7 @@ export const chatbots = [
     href: "/chatbots/pea-policy",
     icon: ClipboardDocumentCheckIcon,
     color: "bg-teal-100",
-    enabled: false,
+    enabled: true,
     category: "นโยบาย กฟภ.",
     keywords: ["นโยบาย"],
   },
